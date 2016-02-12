@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html ng-app>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +7,12 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Lista de compras com AngularJS & Phoenix!</title>
+    <title>Lista de compras com AngularJS and Phoenix!</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
 
   <body>
-    <div class="container" ng-controller="ListaComprasController">
+    <div class="container" ng-controller="AppController">
       <header class="header">
         <div class="span9">
           <h1>Lista de compras</h1>
@@ -28,10 +28,7 @@
       <main role="main">
         <%= render @view_module, @view_template, assigns %>
       </main>
-
-    </div> <!-- /container -->
+    </div>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
-    <script src="<%= static_path(@conn, "/js/angular-1.0.1.js") %>"></script>
-    <script src="<%= static_path(@conn, "/js/toastr.js") %>"></script>
   </body>
 </html>
