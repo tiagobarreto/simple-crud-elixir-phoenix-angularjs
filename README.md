@@ -1,2 +1,2 @@
 # simple-crud-phoenix
-Crud with Elixir / Phoenix
+Crud with Elixir / Phoenix / Angular JS
