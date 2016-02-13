@@ -11,9 +11,9 @@ config :logger, level: :warn
 
 # Configure your database
 config :simple_crud_phoenix, SimpleCrudPhoenix.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "simple_crud_phoenix_test",
+  adapter: Ecto.Adapters.MySQL,
+  username: "root",
+  password: "root",
+  database: "simple_crud_phoenix",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox

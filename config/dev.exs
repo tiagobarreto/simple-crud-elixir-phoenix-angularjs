@@ -34,9 +34,10 @@ config :phoenix, :stacktrace_depth, 20
 
 # Configure your database
 config :simple_crud_phoenix, SimpleCrudPhoenix.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "simple_crud_phoenix_dev",
+  adapter: Ecto.Adapters.MySQL,
+  username: "root",
+  password: "root",
+  database: "simple_crud_phoenix",
   hostname: "localhost",
+  port: 8889,
   pool_size: 10

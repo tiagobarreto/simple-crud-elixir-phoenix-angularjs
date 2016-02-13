@@ -1,11 +1,19 @@
-function AppController($scope) {
+function AppController($scope, $http) {
 
     $scope.item = {};
 
-    $scope.itens = [
-        {produto: 'Leite', quantidade: 2, comprado: false},
-        {produto: 'Cerveja', quantidade: 12, comprado: false}
-    ];
+    $http({method: 'GET', url: 'api/products?format=json'}).then(
+        function successCallback(response) {
+            $scope.itens = response.data;
+        },
+
+        function errorCallback(response) {
+            console.log("errorCallback");
+            $scope.itens = [
+                {produto: 'Leite', quantidade: 2, comprado: false},
+                {produto: 'Cerveja', quantidade: 12, comprado: false}
+            ];
+    });
 
     $scope.adicionaItem = function () {
         $scope.itens.push({produto: $scope.item.produto, quantidade: $scope.item.quantidade, comprado: false});

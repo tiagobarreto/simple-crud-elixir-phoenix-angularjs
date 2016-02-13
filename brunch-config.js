@@ -1,5 +1,4 @@
 exports.config = {
-  // See http://brunch.io/#documentation for docs.
   files: {
     javascripts: {
       joinTo: "js/app.js",
@@ -38,9 +37,7 @@ exports.config = {
   },
 
   modules: {
-    autoRequire: {
-      "js/app.js": ["web/static/js/app"]
-    }
+    wrapper: false
   },
 
   npm: {

@@ -19,8 +19,9 @@ defmodule SimpleCrudPhoenix.Router do
     get "/", PageController, :index
   end
 
-  # Other scopes may use custom stacks.
-  # scope "/api", SimpleCrudPhoenix do
-  #   pipe_through :api
-  # end
+  scope "/api", SimpleCrudPhoenix do
+    pipe_through :api
+
+    resources "/products", ProductsController
+  end
 end

@@ -8,8 +8,8 @@ config :simple_crud_phoenix, SimpleCrudPhoenix.Endpoint,
 
 # Configure your database
 config :simple_crud_phoenix, SimpleCrudPhoenix.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "simple_crud_phoenix_prod",
+  adapter: Ecto.Adapters.MySQL,
+  username: "root",
+  password: "root",
+  database: "simple_crud_phoenix",
   pool_size: 20
