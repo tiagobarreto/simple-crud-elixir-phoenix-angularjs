@@ -1,6 +1,8 @@
-# Simple Crud using Elixir, Phoenix and Angular JS. This project is based in <b>[Simple Crud with Angular JS](https://github.com/tiagobarreto/simple-crud-angular-js)</b> 
+# Simple Crud using Elixir, Phoenix and Angular JS. 
 
-## To start project:
+#### This project is based in <b>[Simple Crud with Angular JS](https://github.com/tiagobarreto/simple-crud-angular-js)</b> 
+
+##### To start project:
 
 - Install dependencies with mix deps.get
 - Create and migrate your database with mix ecto.create && mix ecto.migrate
