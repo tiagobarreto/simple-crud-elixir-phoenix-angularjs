@@ -13,13 +13,15 @@
 
   <body>
     <div class="container" ng-controller="AppController">
-      <header class="header">
-        <div class="span9">
-          <h1>Lista de compras</h1>
-        </div>
-        <div class="span3">
-          <input type="search" ng-model="search" placeholder="Buscar por...">
-        </div>
+      <header class="header row">
+          <div class="page-header">
+            <div class="span9">
+                <h1>Lista de compras</h1>
+            </div>
+            <div class="span3">
+              <input type="search" ng-model="search" placeholder="Buscar por...">
+            </div>
+          </div>
       </header>
 
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>

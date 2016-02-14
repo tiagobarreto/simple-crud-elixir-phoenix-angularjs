@@ -7,7 +7,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr ng-repeat="item in itens | filter:search" class="comprado-{{ item.comprado }}">
+    <tr ng-repeat="item in itens | filter:search" class="erase-{{ item.comprado }}">
       <td><input type="checkbox" ng-model="item.comprado"></td>
       <td><strong>{{ item.produto }}</strong></td>
       <td>{{ item.quantidade }}</td>
@@ -23,7 +23,7 @@
   </tbody>
 </table>
 
-<form class="row form-inline" name="validarValoresPreenchidos">
+<form class=" form-inline" name="validarValoresPreenchidos">
   <input type="text" ng-model="item.produto" placeholder="Produto" required>
   <input type="number" ng-model="item.quantidade" placeholder="Quantidade" class="input-small" required>
   <button ng-hide="edit" class="btn btn-success" ng-disabled="validarValoresPreenchidos.$invalid" ng-click="adicionaItem()">
