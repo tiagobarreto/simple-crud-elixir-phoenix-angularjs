@@ -149,3 +149,6 @@ Libs used by example
       
    * <b>jQuery</b>
       * Version: [2.2.0](http://code.jquery.com/jquery-2.2.0.js)
+      
+   * <b>Angular JS</b>
+      * Version: [1.0.1](https://github.com/angular/code.angularjs.org/blob/master/1.0.1/angular-1.0.1.min.js)
